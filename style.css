@@ -1,0 +1,724 @@
+/*==========Step-0: Global code start==========*/
+body{
+  max-width: 1800px;
+  margin: auto !important;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.global_btn{
+  color: #ffffff;
+  background-color: #000000;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px;
+}
+.global_btn:hover{
+  color: #000000;
+  background-color: #ffffff;
+  font-weight: bold;
+}
+/*==========Step-0: Global code end==========*/
+
+.logo_wrap{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.shopify_logo{
+    width: 50px; /* adjust */
+    height: auto;
+}
+
+.logo_text{
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+}
+/*==========Step-1: This code for Announcementbar section start==========*/
+.announcement-bar{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 35px;
+  background: #95BF47;
+  overflow: hidden;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+.announcement-text{
+  position: absolute;
+  color: #000000 !important;
+  font-size: 16px;
+  font-weight: 600;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.6s ease;
+}
+
+.announcement-text.active{
+  opacity: 1;
+  transform: translateY(0);
+}
+@media screen and (max-width: 425px) {
+  .announcement-text{
+  font-size: 12px !important;
+}
+}
+/*==========Step-1: This code for Announcementbar section end==========*/
+
+
+
+
+
+
+/*==========Step-2: This code for Header section start==========*/
+.shopify_logo{
+    max-height: 50px;
+}
+.bg-drawer{
+background-color: rgb(138 214 235);
+}
+  .active {
+    color: #95BF47;
+    font-weight: bold;
+  }
+
+nav .menu_item:hover{
+ color: #95BF47;
+}
+
+  /* Header drawer bg color start */
+   header {
+    background-color: #000000;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+  }
+  #mobile-menu {
+    background-color: #000000;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Active state when drawer is open */
+  header.drawer-open {
+    background-color: #000000;
+  }
+  header.drawer-open #close-icon{
+    stroke: #fff;
+  }
+  header.drawer-open #mobile-menu {
+    background-color: #000000;
+    height: 100vh;
+  }
+  /* Mobile links adjust when bg is blue */
+  header.drawer-open #mobile-menu a {
+    color: #fff;
+  }
+  header.drawer-open #mobile-menu a:hover {
+    background-color: rgba(255,255,255,0.1);
+  }
+.mobile-menu a{
+  color: #fff;
+  opacity: 1 !important;
+}
+/*==========Step-2: This code for Header section end==========*/
+
+
+
+
+
+
+/*==========Step-3: This code for Hero Section Start==========*/
+#timer{
+  color: #000000;
+  background-color: #ffffff;
+  opacity: 0.9;
+  max-width: 425px;
+  margin: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.hero_btn{
+  background-color: #000000;
+  color: #ffffff;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.hero_btn:hover{
+  background-color: #ffffff;
+  color: #000000;
+}
+
+
+@media screen and (max-width: 374px){
+  .hero_btn{
+  font-size: 11px;
+}
+}
+
+@media screen and (min-width: 375px) and (max-width: 412px){
+  .hero_btn{
+  font-size: 13px;
+}
+}
+
+
+#home {
+    background-image: url("./img/BannerImageStyle.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.about_me_header{
+  color: #000000;
+}
+.about_me{
+    color: #000000;
+    max-width: 425px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #ffffff;
+    opacity: 0.90;
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px #8c8e92;
+    text-align: left;
+}
+/*==========Step-3: This code for Hero Section End==========*/
+
+
+
+
+
+
+/*==========Step-4: This code for project section Start==========*/
+#projects h2{
+  color: #ffffff;
+}
+
+#projects .projects_Card .project_card_heading{
+  background-color: #ffffff;
+  color: #000000;
+}
+#projects .projects_Card .project_card_heading img{
+  max-height: 200px;
+  min-height: 200px;
+  width: 100%;
+}
+/*==========Step-4: This code for project section End==========*/
+
+
+
+
+
+
+/*==========Step-5: This code for Coding knowledge section Start==========*/
+#coding_knowledge{
+  background-color: #ffffff;
+}
+#coding_knowledge img, video {
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+}
+
+.codding_knowledge_item{
+   background-color: #A8CE9B;
+   background-color: #ffffff;
+}
+
+section#coding_knowledge {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+/*==========Step-5: This code for Coding knowledge section End==========*/
+
+
+
+
+
+
+/*==========Step-6: This code for service section Start==========*/
+#services{
+  background-color: #000000;
+  color: #ffffff;
+}
+/*==========Step-6: This code for service section End==========*/
+
+
+
+
+
+
+/*==========Step-7: This code for About Us section Start==========*/
+.about_div_maxwidth{
+  max-width: 1000px;
+  margin: auto;
+  border: 1px solid #000000;
+  padding: 10px;
+  border-radius: 10px;
+}
+#about{
+  background-color: #ffffff;
+  color: #000000;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 20px;
+}
+
+#about p{
+  text-align: justify;
+}
+/*==========Step-7: This code for About Us section End==========*/
+
+
+
+
+/*==========Step-8: This code for Team Member section Start==========*/
+.team_member{
+max-width: 800px;
+margin: auto;
+text-align: center;
+margin-top: 50px;
+color: #ffffff;
+}
+.teammember_heading{
+  color: #ffffff;
+  
+}
+.temmember-images{
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 10px;
+border-radius: 50%;
+padding-top: 10px;
+}
+
+@media only screen and (max-width: 425px){
+  .team_member{
+    max-width: 300px;
+    
+  }
+  .temmember-images{
+ grid-template-columns: 1fr;
+  }
+}
+
+.teammember-img img{
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 5px;
+  max-width: 200px;
+  margin: auto;
+}
+
+.teammember-img img:hover{
+background-color: #95BF47;
+transition-duration: 2s;
+}
+
+
+@media only screen and (min-width: 426px) and (max-width: 767px){
+.teammember-img img {
+    padding: 0px;
+    max-width: 125px;
+}
+.temmember-images p{
+  font-size: 12px;
+}
+}
+
+.team_member {
+    padding: 16px;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+}
+.teammember-img img{
+  filter: grayscale(100%);
+  transition: all 0.4s ease;
+}
+
+.teammember-img img:hover{
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+/* Section Devider code start */
+.section_divider{
+  max-height: 25px;
+}
+.section_divider img{
+  max-height: 25px;
+  margin: auto;
+  min-width: 100%;
+}
+/* Section Devider code end */
+/*==========Step-8: This code for Team Member section End==========*/
+
+
+
+
+
+
+/*==========Step-9: This code for Customer Review/Testimonials section Start==========*/
+#testimonials{
+  padding-bottom: 20px;
+  color: #ffffff;
+}
+.review-slider p{
+  margin-bottom: 10px;
+}
+.margin-top{
+  margin-top: 20px;
+}
+
+
+ .review-slider {
+  position: relative;
+  max-width: 1200px; /* control width */
+  margin: 0 auto;
+  padding: 40px 0;
+  scroll-margin-top: 25px;
+}
+
+.swiper {
+  padding: 20px 0; /* space inside */
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.review-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  /* box-shadow: 0px 4px 12px rgba(0,0,0,0.1); */
+  box-shadow: 0 0 12px rgba(0,0,0,0.15);
+  text-align: center;
+  max-width: 400px;
+  min-height: 250px;
+  max-height: 250px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Place arrows outside */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #000; /* arrow color */
+  width: 40px;
+  height: 40px;
+  /* background: rgba(255, 255, 255, 0.9); */
+  background-color: transparent !important;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.swiper-button-prev {
+  left: -50px;  /* move outside */
+  color: #000 !important;
+}
+
+.swiper-button-next {
+  right: -50px; /* move outside */
+  color: #000 !important;
+}
+
+/* Mobile fix */
+@media (max-width: 425px) {
+  .swiper-button-prev {
+    left: -25px;
+  }
+  .swiper-button-next {
+    right: -25px;
+  }
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 15px !important;
+}
+
+/* this code for hover effect in review div */
+.review-card {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.review-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hover-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #95BF47;
+  color: #000000;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.3s ease;
+}
+
+.review-card:hover .hover-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.client_details{
+  color: #ffffff;
+}
+/*==========Step-9: This code for Customer Review/Testimonials section End==========*/
+
+
+
+
+
+
+
+/*==========Step-10: This code for FAQ section Start==========*/
+#faq{
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.faq-max{
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+
+.faq-bottom {
+  margin-top: 40px;
+  background: #95BF47;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  color: #000000;
+}
+.contact-btn {
+  background: #000000;
+  padding: 10px 20px;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+}
+@media only screen and (max-width: 425px){
+  #faq{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.faq_padding_content{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+}
+@media only screen and (min-width: 426px){
+.faq_padding_content{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+}
+
+
+.faq-item.active {
+  background-color: #ffffff;
+  color: #000000;
+  transition: all 0.3s ease;
+}
+
+.faq-item.active .faq-toggle {
+  border-bottom: 1px solid #000000;
+}
+
+.faq-item {
+  transition: all 0.3s ease;
+}
+
+.faq-item.active .faq-toggle{
+  font-weight: 700;
+}
+
+.faq-item.active .faq-content p{
+  font-weight: 400;
+}
+
+
+
+
+
+.faq-link{
+  color: #ffffff;
+  font-weight: 600;
+  background-color: #000000;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.faq-link:hover{
+  background-color: #95BF47; 
+  color: #000000;
+}
+@media only screen and (max-width: 374px){
+  .faq-link{
+    font-size: 10px !important;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 479px){
+  .faq-link{
+    font-size: 12px;
+  }
+}
+/*==========Step-10: This code for FAQ section End==========*/
+
+
+
+
+
+
+
+/*==========Step-11: This code for Our working video section Start==========*/
+#videos{
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/*==========Step-11: This code for Our working video section End==========*/
+
+
+
+
+
+
+/*==========Step-12: This code for Contact Us section Start==========*/
+ #contact{
+  margin: auto;
+  max-width: 500px;
+}
+
+.contact_form_part{
+background-image: url(./img/WoodBackground.jpg);
+border: 1px solid gray;
+padding-top: 10px;
+padding-bottom: 30px;
+border-radius: 12px;
+}
+
+.email_margin{
+  margin: 5px !important;
+}
+
+.whatsappdiv p{
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 425px){
+  /* Social Icon Part */
+.social-links a img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.social-links a {
+    margin: 0 5px;
+}
+/* Contact Us Part */
+.footer_part{
+  font-size: 10px;
+}
+}
+/*==========Step-12: This code for Contact Us section End==========*/
+
+
+
+
+
+
+
+/*==========Step-13: This code for Follow Us/Social Media  section Start==========*/
+.social-section {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f9f9f9;
+  }
+  .social-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  .social-links a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.2s ease;
+  }
+  .social-links a img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  .social-links a:hover {
+    transform: scale(1.1);
+  }
+ /*==========Step-13: This code for Follow Us/Social Media  section End==========*/
+
+
+
+
+
+/*==========Step-14: This code for Footer section Start==========*/
+.footer_part{
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  color: #ffffff;
+}
+/*==========Step-14: This code for Footer section End==========*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
