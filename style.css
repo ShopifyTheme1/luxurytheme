@@ -127,6 +127,9 @@ nav .menu_item:hover{
   color: #fff;
   opacity: 1 !important;
 }
+.contact_emamil{
+  font-size: 12px;
+}
 /*==========Step-2: This code for Header section end==========*/
 
 
@@ -204,7 +207,330 @@ nav .menu_item:hover{
 
 
 
-/*==========Step-4: This code for project section Start==========*/
+
+/*==========Step-4: This code for collection slider Section Start==========*/
+.editorial-collections {
+  padding: 80px 20px;
+  overflow: hidden;
+  color:#ffffff;
+  border-bottom: 1px solid #5e5b5b;
+}
+
+.editorial-wrapper {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 32px;
+  align-items: center;
+}
+
+/* LEFT CONTENT */
+
+.editorial-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.editorial-subtitle {
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.editorial-title {
+  font-size: 54px;
+  line-height: 1.1;
+  margin-bottom: 18px;
+  font-family: serif;
+}
+
+.editorial-text {
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+
+.editorial-button {
+  display: inline-flex;
+  width: fit-content;
+  padding: 12px 28px;
+  background: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.editorial-button:hover {
+  text-decoration: underline;
+}
+
+/* SLIDER */
+
+.editorial-slider-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.editorial-grid {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+
+  padding: 0 60px;
+}
+
+.editorial-grid::-webkit-scrollbar {
+  display: none;
+}
+
+/* CARD */
+
+.editorial-card {
+  flex: 0 0 calc(33.333% - 14px);
+  min-width: calc(33.333% - 14px);
+
+  text-decoration: none;
+  scroll-snap-align: start;
+}
+
+.editorial-image {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+.editorial-overlay {
+  margin-top: 14px;
+}
+
+.editorial-overlay h3 {
+  font-size: 18px;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* BUTTONS */
+
+.editorial-prev,
+.editorial-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+
+  width: 44px;
+  height: 44px;
+
+  border: 1px solid #000;
+  background: #fff;
+  color: #000;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.2s ease;
+}
+
+.editorial-prev:hover,
+.editorial-next:hover {
+  background: #000;
+  color: #fff;
+  border: 1px solid #ffffff;
+}
+
+.editorial-prev {
+  left: 0;
+}
+
+.editorial-next {
+  right: 0;
+}
+
+/* LARGE TABLET */
+
+@media (max-width: 1300px) {
+
+  .editorial-wrapper {
+    grid-template-columns: 220px 1fr;
+    gap: 24px;
+  }
+
+  .editorial-grid {
+    padding: 0 45px;
+    gap: 16px;
+  }
+
+  .editorial-card {
+    flex: 0 0 calc(40% - 10px);
+    min-width: calc(40% - 10px);
+  }
+}
+
+/* TABLET */
+
+@media (max-width: 1100px) {
+
+  .editorial-wrapper {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .editorial-left {
+    align-items: flex-start;
+    padding: 0 20px;
+  }
+
+  .editorial-slider-wrapper {
+    padding: 0 10px;
+  }
+
+  .editorial-grid {
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 10px;
+  }
+
+  .editorial-card {
+    flex: 0 0 46%;
+    min-width: 46%;
+  }
+
+  .editorial-prev,
+  .editorial-next {
+    width: 42px;
+    height: 42px;
+  }
+
+  .editorial-prev {
+    left: 10px;
+  }
+
+  .editorial-next {
+    right: 10px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+
+  .editorial-collections {
+    padding: 60px 0;
+  }
+
+  .editorial-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .editorial-left {
+    padding: 0 20px;
+    align-items: flex-start;
+  }
+
+  .editorial-title {
+    font-size: 34px;
+  }
+
+  .editorial-grid {
+    gap: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .editorial-card {
+    flex: 0 0 82%;
+    min-width: 82%;
+  }
+
+  .editorial-image {
+    height: 380px;
+  }
+
+  .editorial-prev,
+  .editorial-next {
+    width: 38px;
+    height: 38px;
+    background: rgba(255,255,255,0.95);
+  }
+
+  .editorial-prev {
+    left: 10px;
+  }
+
+  .editorial-next {
+    right: 10px;
+  }
+}
+
+
+/* this code for cllection preview password text */
+.editorial-image-wrapper {
+  position: relative;
+}
+
+.editorial-middle-text {
+  position: absolute;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  bottom: 0;
+  width: 100%;
+
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+
+  /* padding: 10px 18px; */
+  padding: 10px 5px;
+  font-size: 14px;
+  letter-spacing: 1px;
+
+  /* border-radius: 4px; */
+
+  /* text-align: center; */
+  text-align: left;
+}
+/*==========Step-4: This code for collection slider Section End==========*/
+
+
+
+
+
+
+/*==========Step-5: This code for service section Start==========*/
+#services{
+  background-color: #000000;
+  color: #ffffff;
+}
+/*==========Step-5: This code for service section End==========*/
+
+
+
+
+
+
+
+
+
+
+
+/*==========Step-6: This code for project section Start==========*/
 #projects h2{
   color: #ffffff;
 }
@@ -218,14 +544,14 @@ nav .menu_item:hover{
   min-height: 200px;
   width: 100%;
 }
-/*==========Step-4: This code for project section End==========*/
+/*==========Step-6: This code for project section End==========*/
 
 
 
 
 
 
-/*==========Step-5: This code for Coding knowledge section Start==========*/
+/*==========Step-7: This code for Coding knowledge section Start==========*/
 #coding_knowledge{
   background-color: #ffffff;
 }
@@ -245,26 +571,17 @@ section#coding_knowledge {
     padding-left: 16px;
     padding-right: 16px;
 }
-/*==========Step-5: This code for Coding knowledge section End==========*/
+/*==========Step-7: This code for Coding knowledge section End==========*/
 
 
 
 
 
 
-/*==========Step-6: This code for service section Start==========*/
-#services{
-  background-color: #000000;
-  color: #ffffff;
-}
-/*==========Step-6: This code for service section End==========*/
 
 
 
-
-
-
-/*==========Step-7: This code for About Us section Start==========*/
+/*==========Step-8: This code for About Us section Start==========*/
 .about_div_maxwidth{
   max-width: 1000px;
   margin: auto;
@@ -284,12 +601,12 @@ section#coding_knowledge {
 #about p{
   text-align: justify;
 }
-/*==========Step-7: This code for About Us section End==========*/
+/*==========Step-8: This code for About Us section End==========*/
 
 
 
 
-/*==========Step-8: This code for Team Member section Start==========*/
+/*==========Step-9: This code for Team Member section Start==========*/
 .team_member{
 max-width: 800px;
 margin: auto;
@@ -367,14 +684,14 @@ transition-duration: 2s;
   min-width: 100%;
 }
 /* Section Devider code end */
-/*==========Step-8: This code for Team Member section End==========*/
+/*==========Step-9: This code for Team Member section End==========*/
 
 
 
 
 
 
-/*==========Step-9: This code for Customer Review/Testimonials section Start==========*/
+/*==========Step-10: This code for Customer Review/Testimonials section Start==========*/
 #testimonials{
   padding-bottom: 20px;
   color: #ffffff;
@@ -491,7 +808,7 @@ transition-duration: 2s;
 .client_details{
   color: #ffffff;
 }
-/*==========Step-9: This code for Customer Review/Testimonials section End==========*/
+/*==========Step-10: This code for Customer Review/Testimonials section End==========*/
 
 
 
@@ -499,7 +816,7 @@ transition-duration: 2s;
 
 
 
-/*==========Step-10: This code for FAQ section Start==========*/
+/*==========Step-11: This code for FAQ section Start==========*/
 #faq{
   color: #ffffff;
   border: 1px solid #ffffff;
@@ -599,7 +916,7 @@ transition-duration: 2s;
     font-size: 12px;
   }
 }
-/*==========Step-10: This code for FAQ section End==========*/
+/*==========Step-11: This code for FAQ section End==========*/
 
 
 
@@ -607,20 +924,20 @@ transition-duration: 2s;
 
 
 
-/*==========Step-11: This code for Our working video section Start==========*/
+/*==========Step-12: This code for Our working video section Start==========*/
 #videos{
   padding-left: 16px;
   padding-right: 16px;
 }
 
-/*==========Step-11: This code for Our working video section End==========*/
+/*==========Step-12: This code for Our working video section End==========*/
 
 
 
 
 
 
-/*==========Step-12: This code for Contact Us section Start==========*/
+/*==========Step-13: This code for Contact Us section Start==========*/
  #contact{
   margin: auto;
   max-width: 500px;
@@ -657,7 +974,7 @@ border-radius: 12px;
   font-size: 10px;
 }
 }
-/*==========Step-12: This code for Contact Us section End==========*/
+/*==========Step-13: This code for Contact Us section End==========*/
 
 
 
@@ -665,43 +982,53 @@ border-radius: 12px;
 
 
 
-/*==========Step-13: This code for Follow Us/Social Media  section Start==========*/
+/*==========Step-14: This code for Follow Us/Social Media  section Start==========*/
 .social-section {
     text-align: center;
-    padding: 40px 20px;
-    background: #f9f9f9;
+    padding: 10px 20px;
+    /* background: #f9f9f9; */
+    /* background: url('./img/Baner15001000.jpg') center center/cover no-repeat; */
+    background: #000000;
+    border-top: 1px solid #5e5b5b;
   }
   .social-section h2 {
     margin-bottom: 20px;
     font-size: 24px;
-    color: #333;
+    color: #ffffff;
   }
   .social-links a {
-    margin: 0 10px;
+    margin: 0 5px;
     display: inline-block;
     transition: transform 0.2s ease;
   }
   .social-links a img {
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
+    filter: grayscale(100%);
+    border: 2px solid #ffffff;
+    transition: filter 0.3s ease;
   }
   .social-links a:hover {
     transform: scale(1.1);
   }
- /*==========Step-13: This code for Follow Us/Social Media  section End==========*/
+
+.social-links a:hover img {
+    filter: grayscale(0%);
+}
+ /*==========Step-14: This code for Follow Us/Social Media  section End==========*/
 
 
 
 
 
-/*==========Step-14: This code for Footer section Start==========*/
+/*==========Step-15: This code for Footer section Start==========*/
 .footer_part{
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border-top: 1px solid #5e5b5b;
+  border-bottom: 1px solid #5e5b5b;
   color: #ffffff;
 }
-/*==========Step-14: This code for Footer section End==========*/
+/*==========Step-15: This code for Footer section End==========*/
 
 
 
