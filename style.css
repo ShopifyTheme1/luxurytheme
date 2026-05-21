@@ -848,6 +848,7 @@ transition-duration: 2s;
   color: #ffffff;
   text-decoration: none;
   border-radius: 6px;
+  cursor: pointer;
 }
 @media only screen and (max-width: 425px){
   #faq{
