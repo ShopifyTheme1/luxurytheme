@@ -309,6 +309,7 @@ nav .menu_item:hover{
   height: 420px;
   object-fit: cover;
   display: block;
+  object-position: top center;
 }
 
 .editorial-overlay {
